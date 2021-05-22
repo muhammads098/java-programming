@@ -22,6 +22,8 @@ public class ReplacePractice {
                 .replace("results for java book", "");
         System.out.println("result = " + result);
 
+        String sentence1="Welcome to JA world,JA is open source manual testing.";
+
 
 
 
