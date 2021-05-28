@@ -8,5 +8,7 @@ public class StudentObjects {
         Student st3=new Student("Burak");
         Student st4=new Student("Alihan");
 
+        Student st5=new Student("Nasiba ",28);
+
     }
 }
