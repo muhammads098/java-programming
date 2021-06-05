@@ -1,4 +1,4 @@
-package day50_inheritence;
+package day50_inheritance;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -77,10 +77,20 @@ public class StaticBlockDemo {
                 "Volvo"));
     }
 
+    { //initializer block -> runs each time object created, before constructor
+        System.out.println("Initializer block");
+    }
+
     public StaticBlockDemo() {
         System.out.println("Constructor method");
         num += 5;
     }
+
+    public StaticBlockDemo(int value) {
+        System.out.println("Overloaded constructor - value = " + value);
+        num += value;
+    }
+
 
     //other methods that use the carModels arraylist
 
