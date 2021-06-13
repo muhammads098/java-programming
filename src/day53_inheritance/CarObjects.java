@@ -24,6 +24,17 @@ public class CarObjects {
         System.out.println(ec2);
         System.out.println("Count = "+ElectricCar.getCount());
 
+        Roadster roadster = new Roadster("Tesla","Roadster",200000,2022,620);
+        System.out.println(roadster);
+        roadster.drive(1000);
+        roadster.drive(600);
+        System.out.println(roadster.getCount());
+
+        ModelX myModelX = new ModelX("Tesla","Model X",89990.0,2021,360);
+        System.out.println(myModelX.toString());
+        myModelX.drive(233);
+        System.out.println("Total ElectricCar Count = " + ElectricCar.getCount());
+
 
 
     }
