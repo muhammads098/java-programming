@@ -1,4 +1,4 @@
-package day53_inheritance;
+package day53_inheritance.tesla;
 
 public class ElectricCar {
     private String make;
@@ -7,6 +7,7 @@ public class ElectricCar {
     private int year;
     private int range;
     private static int count;
+    public static final int MAX_RANGE=400;
 
     public ElectricCar(String make, String model, double price, int year, int range) {
         setMake(make); //reuse the code in the setter condition
@@ -16,6 +17,11 @@ public class ElectricCar {
         this.range = range;
         count++;
     }
+    public final void charge(){
+        System.out.println("charging the electric car using plug-in");
+        this.range=MAX_RANGE;
+    }
+
     public static int getCount(){
         return count;
     }

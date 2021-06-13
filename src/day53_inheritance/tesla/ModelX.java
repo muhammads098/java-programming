@@ -1,4 +1,6 @@
-package day53_inheritance;
+package day53_inheritance.tesla;
+
+import day53_inheritance.tesla.ElectricCar;
 
 public class ModelX extends ElectricCar {
 

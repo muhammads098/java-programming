@@ -1,6 +1,4 @@
-package day53_inheritance;
-
-import day53_inheritance.ElectricCar;
+package day53_inheritance.tesla;
 
 public class CarObjects {
     public static void main(String[] args) {
