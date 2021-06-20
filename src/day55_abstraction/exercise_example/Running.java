@@ -1,6 +1,8 @@
-package day55_abstraction;
+package day55_abstraction.exercise_example;
 
-public class Running extends Exercise{
+import day55_abstraction.exercise_example.Exercise;
+
+public class Running extends Exercise {
 
     @Override
     public void perform() {
