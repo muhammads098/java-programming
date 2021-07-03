@@ -1,26 +1,27 @@
-package day56_abstraction.drivable;
+package day56_abstraction.driveable;
 
 import day56_abstraction.greeting.Greeting;
 
-public class Plane extends Transportation implements Greeting,SelfDriveable {
+public class Plane extends day56_abstraction.driveable.Transportation implements day56_abstraction.driveable.SelfDrivable, Greeting {
+
+    @Override
+    public void autoPiloting() {
+        System.out.println("Flying on Auto-pilot mode");
+    }
+
     @Override
     public void transportPeople() {
-        System.out.println("flying from one city to another");
+        System.out.println("Flying people from one city to another");
     }
 
     @Override
     public void cost(int mile) {
-        System.out.println("Plane cost "+(mile*25.0)+" fly "+mile+" miles");
-    }
-
-    @Override
-    public void autoPiloting() {
-        System.out.println("flying on auto");
+        System.out.println("Plane costs " + (mile * 25.0) + " to fly " + mile + " miles");
     }
 
     @Override
     public void hi() {
-        System.out.println("welcome aboard");
+        System.out.println("Welcome aboard");
     }
 
     @Override
@@ -29,6 +30,6 @@ public class Plane extends Transportation implements Greeting,SelfDriveable {
     }
 
     public void land() {
-        System.out.println("plane is landing, fasten your seatbelts");
+        System.out.println("Plane is landing - buckle up");
     }
 }
