@@ -1,6 +1,5 @@
 package day24_loops;
 
-import com.sun.codemodel.internal.JWhileLoop;
 
 public class YouTubeCatVideo {
     public static void main(String[] args) throws InterruptedException {
